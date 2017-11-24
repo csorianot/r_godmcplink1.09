@@ -54,7 +54,7 @@ RUN apt-get update \
 RUN apt-get update && apt-get install -y libcurl4-gnutls-dev libxml2-dev libmariadb-client-lgpl-dev && apt-get clean
 RUN apt-get install -y libssl-dev && apt-get clean
 RUN apt-get remove -y libcairo2-dev && apt-get clean
-RUN apt-get update && apt-get install -y libgtk2.0-dev libcairo2-dev xvfb xauth xfonts-base ghostscript && apt-get clean
+RUN apt-get update && apt-get install -y libgtk2.0-dev libcairo2-dev libfontconfig1-dev libglib2.0-dev libgdk-pixbuf2.0-dev libpango1.0-dev libatk1.0-dev xvfb xauth xfonts-base ghostscript && apt-get clean
 RUN apt-get update && apt-get install -y unzip git sshpass && apt-get clean
 RUN apt-get update && apt-get install -y curl && apt-get clean
 
