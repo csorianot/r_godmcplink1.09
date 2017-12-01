@@ -24,3 +24,4 @@ RUN Rscript -e 'install.packages(c("Hmisc","devtools","MASS","lmtest","gplots","
 RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
 RUN curl 'https://www.cog-genomics.org/static/bin/plink171114/plink_linux_x86_64.zip'> plink.zip && \
     unzip plink.zip && rm plink.zip && mv plink /usr/local/bin
+#
